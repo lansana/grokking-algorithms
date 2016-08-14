@@ -13,6 +13,7 @@ I created this repository as a learning experience for myself, and in hopes that
 
 #### Chapter 2 (Selection Sort)
 
+- Go
 - JavaScript
 
 ## Contributing
