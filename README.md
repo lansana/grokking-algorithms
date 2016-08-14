@@ -13,4 +13,4 @@ I created this repository as a learning experience for myself, and in hopes that
 
 ## Contributing
 
-Feel free to make pull requests and add a solution to any of the chapters in a language that has not yet been added!
+Feel free to make pull requests and add a solution to any of the chapters in a language that has not yet been added, or to improve upon someone else's solution.
