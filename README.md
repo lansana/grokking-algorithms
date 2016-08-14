@@ -21,6 +21,17 @@ I created this repository as a learning experience for myself, and in hopes that
 - Go
 - JavaScript
 
+## Extras
+
+The extras consist of the following:
+
+- A combination of algorithms used in the book
+- Algorithms that weren't touched on in the book
+
+#### Recursive Binary Search
+
+- JavaScript
+
 ## Contributing
 
 Feel free to make pull requests and add a solution to any of the chapters in a language that has not yet been added, or to improve upon someone else's solution.
