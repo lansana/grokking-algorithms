@@ -14,11 +14,11 @@ func binarySearch(list []int, val int) int {
 		mid := (low + high) / 2
 
 		if list[mid] == val {
-			return mid;
+			return mid
 		} else if list[mid] < val {
-			low = mid + 1;
+			low = mid + 1
 		} else if list[mid] > val {
-			high = mid - 1;
+			high = mid - 1
 		}
 
 		mid = (low + high) / 2
