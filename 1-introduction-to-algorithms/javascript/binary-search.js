@@ -10,7 +10,7 @@ function binarySearch(list, val) {
         high = list.length - 1;
 
     while (low <= high) {
-        let mid = (low + high) >>> 1;
+        let mid = Math.floor((low + high) / 2);
 
         if (list[mid] === val) {
             return mid;
@@ -19,8 +19,6 @@ function binarySearch(list, val) {
         } else if (list[mid] > val) {
             high = mid - 1;
         }
-
-        mid = (low + high) >>> 1;
     }
 
     return -1;
