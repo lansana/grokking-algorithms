@@ -8,34 +8,34 @@ I created this repository as a learning experience for myself, and in hopes that
 
 #### Chapter 1 (Introduction to Algorithms)
 
-- Go
-- JavaScript
-- PHP
+- [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/go/binary-search.go)
+- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/javascript/binary-search.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/php/binary-search.php)
 
 #### Chapter 2 (Selection Sort)
 
-- Go
-- JavaScript
-- PHP
+- [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/go/selection-sort.go)
+- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/javascript/selection-sort.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/php/selection-sort.php)
 
 #### Chapter 3 (Recursion)
 
-- Go
-- JavaScript
-- PHP
+- [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/go/recursion.go)
+- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/javascript/recursion.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/php/recursion.php)
 
 ## Extras
 
 The extras consist of the following:
 
-- A combination of algorithms used in the book
-- Algorithms that weren't touched on in the book
+1. Using two or more algorithms in together
+2. Algorithms that weren't touched on in the book
 
 #### Recursive Binary Search
 
-- Go
-- JavaScript
-- PHP
+- [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/extras/recursive-binary-search/go/recursive-binary-search.go)
+- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/extras/recursive-binary-search/javascript/recursive-binary-search.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/extras/recursive-binary-search/php/recursive-binary-search.php)
 
 ## Contributing
 
