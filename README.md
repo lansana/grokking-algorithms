@@ -35,6 +35,7 @@ The extras consist of the following:
 
 - Go
 - JavaScript
+- PHP
 
 ## Contributing
 
