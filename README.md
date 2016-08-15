@@ -30,6 +30,7 @@ The extras consist of the following:
 
 #### Recursive Binary Search
 
+- Go
 - JavaScript
 
 ## Contributing
