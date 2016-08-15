@@ -4,31 +4,33 @@ This repository contains the algorithms (in various languages) from each of the 
 
 I created this repository as a learning experience for myself, and in hopes that it may be useful to others.
 
-## Languages
+## Chapters
 
-#### Chapter 1 (Introduction to Algorithms)
+Below is the index of the algorithms (in various languages) used in each chapter of the book.
+
+#### Chapter 1: Introduction to Algorithms
 
 - [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/go/binary-search.go)
 - [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/javascript/binary-search.js)
 - [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/1-introduction-to-algorithms/php/binary-search.php)
 
-#### Chapter 2 (Selection Sort)
+#### Chapter 2: Selection Sort
 
 - [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/go/selection-sort.go)
 - [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/javascript/selection-sort.js)
 - [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/2-selection-sort/php/selection-sort.php)
 
-#### Chapter 3 (Recursion)
+#### Chapter 3: Recursion
 
 - [Go](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/go/recursion.go)
 - [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/javascript/recursion.js)
 - [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/3-recursion/php/recursion.php)
 
-## Extras
+## More Algorithms
 
-The extras consist of the following:
+The `/extras` directory consists of the following examples in multiple languages:
 
-1. Using two or more algorithms in together
+1. Combining two or more algorithms
 2. Algorithms that weren't touched on in the book
 
 #### Recursive Binary Search
