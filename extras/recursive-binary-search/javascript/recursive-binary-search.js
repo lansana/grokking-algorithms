@@ -11,7 +11,7 @@ function recursiveBinarySearch(list, val, low, high) {
         return -1;
     }
 
-    let mid = (low + high) >>> 1;
+    let mid = Math.floor((low + high) / 2);
 
     if (list[mid] === val) {
         return mid;
