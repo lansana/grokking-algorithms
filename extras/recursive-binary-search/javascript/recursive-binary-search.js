@@ -15,9 +15,9 @@ function recursiveBinarySearch(list, val, low, high) {
 
     if (list[mid] === val) {
         return mid;
-    } else if (mid > val) {
+    } else if (list[mid] > val) {
         return recursiveBinarySearch(list, val, low, mid  -1);
-    } else if (mid < val) {
+    } else if (list[mid] < val) {
         return recursiveBinarySearch(list, val, mid + 1, high);
     }
 }

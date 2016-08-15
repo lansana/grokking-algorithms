@@ -13,9 +13,9 @@ func recursiveBinarySearch(list []int, val int, low int, high int) int {
 
 	if list[mid] == val {
 		return mid
-	} else if mid > val {
+	} else if list[mid] > val {
 		return recursiveBinarySearch(list, val, low, mid - 1)
-	} else if mid < val {
+	} else if list[mid] < val {
 		return recursiveBinarySearch(list, val, mid + 1, high)
 	}
 
