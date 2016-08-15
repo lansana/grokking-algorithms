@@ -41,4 +41,4 @@ The `/extras` directory consists of the following examples in multiple languages
 
 ## Contributing
 
-Feel free to make pull requests and add a solution to any of the chapters in a language that has not yet been added, or to improve upon someone else's solution.
+Feel free to make pull requests for code improvements, new languages, etc.
