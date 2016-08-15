@@ -16,6 +16,7 @@ I created this repository as a learning experience for myself, and in hopes that
 
 - Go
 - JavaScript
+- PHP
 
 #### Chapter 3 (Recursion)
 
