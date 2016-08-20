@@ -28,7 +28,9 @@ Below is the index of the algorithms (in various languages) used in each chapter
 
 #### Chapter 4: Quicksort
 
-- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/4-quicksort/javascript/quicksort.js)
+- JavaScript
+    - [Swapping in place/partitioning](https://github.com/LansanaCamara/grokking-algorithms/blob/master/4-quicksort/javascript/quicksort1.js)
+    - [Creating new arrays](https://github.com/LansanaCamara/grokking-algorithms/blob/master/4-quicksort/javascript/quicksort2.js)
 
 ## More Algorithms
 
