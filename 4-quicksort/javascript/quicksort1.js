@@ -1,5 +1,5 @@
 /**
- * Quicksort implementation
+ * Quicksort implementation, without creating new arrays
  *
  * @param items
  * @param left
