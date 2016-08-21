@@ -4,10 +4,6 @@ class Queue {
         this.data = {};
     }
 
-    first() {
-        return Object.keys(this.data)[0];
-    }
-
     enqueue(key, val) {
         if (!this.data.hasOwnProperty(key)) {
             this.count++;
@@ -16,7 +12,7 @@ class Queue {
     }
 
     dequeue() {
-        let key = this.first(),
+        let key = Object.keys(this.data)[0],
             memo = this.data[key];
         delete this.data[key];
         this.count--;
@@ -27,56 +23,51 @@ class Queue {
 class Person {
     constructor(args) {
         this.name = args.name;
-        this.friends = args.friends;
+        this.friends = args.friends || [];
         this.profession = args.profession;
     }
 }
 
 let Ronaldinho = new Person({
         name: "Ronaldinho",
-        friends: [],
         profession: "Professional Soccer Player"
     }),
     Lauren = new Person({
         name: "Lauren",
-        friends: [],
         profession: "Mango Seller"
     }),
-    Angelica = {
+    Angelica = new Person({
         name: "Angelica",
-        friends: [],
         profession: "Professional Volleyball Player"
-    },
-    Cody = {
+    }),
+    Cody = new Person({
         name: "Cody",
-        friends: [],
         profession: "Network Programmer"
-    },
-    Beyonce = {
+    }),
+    Beyonce = new Person({
         name: "Beyonce",
-        friends: [],
         profession: "Musician"
-    },
-    Lansana = {
+    }),
+    Lansana = new Person({
         name: "Lansana",
         friends: [Ronaldinho, Lauren, Angelica],
         profession: "Software Engineer"
-    },
-    Zack = {
+    }),
+    Zack = new Person({
         name: "Zack",
         friends: [Cody],
         profession: "Software Architect"
-    },
-    John = {
+    }),
+    John = new Person({
         name: "John",
         friends: [Ronaldinho, Angelica],
         profession: "Project Manager"
-    },
-    Francisco = {
+    }),
+    Francisco = new Person({
         name: "Francisco",
         friends: [Beyonce],
         profession: "Game Developer"
-    };
+    });
 
 let queue = new Queue();
 
@@ -108,7 +99,7 @@ function search(queue, profession) {
 }
 
 function hasProfession(person, profession) {
-    return person.profession.toLowerCase().indexOf(profession.toLowerCase()) > -1;
+    return person.profession.toLowerCase() === profession.toLowerCase();
 }
 
 console.log(search(queue, "Musician")); // true
