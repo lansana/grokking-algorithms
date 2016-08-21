@@ -35,6 +35,7 @@ Below is the index of the algorithms (in various languages) used in each chapter
 #### Chapter 5: Hash Tables
 
 - [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/5-hash-tables/javascript/hash-tables.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/5-hash-tables/php/hash-tables.php)
 
 ## More Algorithms
 
