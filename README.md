@@ -32,6 +32,10 @@ Below is the index of the algorithms (in various languages) used in each chapter
     - [Swapping in place/partitioning](https://github.com/LansanaCamara/grokking-algorithms/blob/master/4-quicksort/javascript/quicksort1.js)
     - [Creating new arrays](https://github.com/LansanaCamara/grokking-algorithms/blob/master/4-quicksort/javascript/quicksort2.js)
 
+#### Chapter 5: Hash Tables
+
+- [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/5-hash-tables/javascript/hash-tables.js)
+
 ## More Algorithms
 
 The `/extras` directory consists of the following examples in multiple languages:
