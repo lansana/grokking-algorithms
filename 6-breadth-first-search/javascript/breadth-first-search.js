@@ -21,60 +21,34 @@ class Queue {
 }
 
 class Person {
-    constructor(args) {
-        this.name = args.name;
-        this.friends = args.friends || [];
-        this.profession = args.profession;
+    constructor(name, profession, friends) {
+        this.name = name;
+        this.profession = profession;
+        this.friends = friends || [];
     }
 }
 
-let Ronaldinho = new Person({
-        name: "Ronaldinho",
-        profession: "Professional Soccer Player"
-    }),
-    Lauren = new Person({
-        name: "Lauren",
-        profession: "Mango Seller"
-    }),
-    Angelica = new Person({
-        name: "Angelica",
-        profession: "Professional Volleyball Player"
-    }),
-    Cody = new Person({
-        name: "Cody",
-        profession: "Network Programmer"
-    }),
-    Beyonce = new Person({
-        name: "Beyonce",
-        profession: "Musician"
-    }),
-    Lansana = new Person({
-        name: "Lansana",
-        friends: [Ronaldinho, Lauren, Angelica],
-        profession: "Software Engineer"
-    }),
-    Zack = new Person({
-        name: "Zack",
-        friends: [Cody],
-        profession: "Software Architect"
-    }),
-    John = new Person({
-        name: "John",
-        friends: [Ronaldinho, Angelica],
-        profession: "Project Manager"
-    }),
-    Francisco = new Person({
-        name: "Francisco",
-        friends: [Beyonce],
-        profession: "Game Developer"
-    });
+let Ronaldinho = new Person('Ronaldinho', 'Professional Soccer Player'),
+    Lauren = new Person('Lauren', 'Mango Seller'),
+    Angelica = new Person('Angelica', 'Professional Volleyball Player'),
+    Cody = new Person('Cody', 'Network Programmer'),
+    Beyonce = new Person('Beyonce', 'Musician'),
+    Lansana = new Person('Lansana', 'Software Engineer', [Ronaldinho, Lauren, Angelica]),
+    Zack = new Person('Zack', 'Software Architect', [Cody]),
+    John = new Person('John', 'Project Manager', [Ronaldinho, Angelica]),
+    Francisco = new Person('Francisco', 'Game Developer', [Beyonce]);
+
+let graph = {};
+graph['Lansana'] = Lansana;
+graph['Zack'] = Zack;
+graph['John'] = John;
+graph['Francisco'] = Francisco;
 
 let queue = new Queue();
-
-queue.enqueue("Lansana", Lansana);
-queue.enqueue("Zack", Zack);
-queue.enqueue("John", John);
-queue.enqueue("Francisco", Francisco);
+queue.enqueue("Lansana", graph['Lansana']);
+queue.enqueue("Zack", graph['Zack']);
+queue.enqueue("John", graph['John']);
+queue.enqueue("Francisco", graph['Francisco']);
 
 function search(queue, profession) {
     let searched = [];
@@ -86,7 +60,7 @@ function search(queue, profession) {
             if (hasProfession(person, profession)) {
                 return true;
             } else {
-                for(let i = 0, len = person.friends.length; i < len; i++) {
+                for (let i = 0, len = person.friends.length; i < len; i++) {
                     queue.enqueue(person.friends[i].name, person.friends[i]);
                 }
             }
