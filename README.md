@@ -40,6 +40,7 @@ Below is the index of the algorithms (in various languages) used in each chapter
 #### Chapter 6: Breadth-first Search
 
 - [JavaScript](https://github.com/LansanaCamara/grokking-algorithms/blob/master/6-breadth-first-search/javascript/breadth-first-search.js)
+- [PHP](https://github.com/LansanaCamara/grokking-algorithms/blob/master/6-breadth-first-search/php/breadth-first-search.php)
 
 ## More Algorithms
 
