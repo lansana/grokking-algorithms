@@ -31,49 +31,21 @@ class Person
     public $friends = array();
     public $profession = null;
 
-    public function __construct(array $args)
+    public function __construct($name, $friends, $profession)
     {
-        $this->name = $args['name'];
-        $this->friends = $args['friends'];
-        $this->profession = $args['profession'];
+        $this->name = $name;
+        $this->friends = $friends;
+        $this->profession = $profession;
     }
 }
 
-$joe = new Person(array(
-    'name' => 'Joe',
-    'friends' => null,
-    'profession' => 'SEO Expert'
-));
-$chris = new Person(array(
-    'name' => 'Chris',
-    'friends' => null,
-    'profession' => 'Front End Developer'
-));
-$garrett = new Person(array(
-    'name' => 'Garrett',
-    'friends' => null,
-    'profession' => 'Bodybuilder'
-));
-$johanna = new Person(array(
-    'name' => 'Johanna',
-    'friends' => null,
-    'profession' => 'Marketer'
-));
-$jim = new Person(array(
-    'name' => 'Jim',
-    'friends' => null,
-    'profession' => 'Digital Director'
-));
-$lansana = new Person(array(
-    'name' => 'Lansana',
-    'friends' => array($garrett, $johanna, $jim),
-    'profession' => 'Software Engineering'
-));
-$john = new Person(array(
-    'name' => 'John',
-    'friends' => array($joe, $chris),
-    'profession' => 'Client Strategy Director'
-));
+$joe = new Person('Joe', null, 'SEO Expert');
+$chris = new Person('Chris', null, 'Front End Developer');
+$garrett = new Person('Garrett', null, 'Bodybuilder');
+$johanna = new Person('Johanna', null, 'Marketer');
+$jim = new Person('Jim', null, 'Digital Director');
+$lansana = new Person('Lansana', array($garrett, $johanna, $jim), 'Software Engineer');
+$john = new Person('John', array($joe, $chris), 'Client Strategy Director');
 
 $queue = new Queue();
 
@@ -103,4 +75,4 @@ function search($queue, $profession)
     return false;
 }
 
-echo search($queue, 'Digital Director'); // 1
+echo search($queue, 'Digital Director'); // Returns true; match found using breadth-first search
