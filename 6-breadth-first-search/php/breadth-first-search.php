@@ -31,24 +31,23 @@ class Person
     public $friends = array();
     public $profession = null;
 
-    public function __construct($name, $friends, $profession)
+    public function __construct($name, $profession, array $friends = array())
     {
         $this->name = $name;
-        $this->friends = $friends;
         $this->profession = $profession;
+        $this->friends = $friends;
     }
 }
 
-$joe = new Person('Joe', null, 'SEO Expert');
-$chris = new Person('Chris', null, 'Front End Developer');
-$garrett = new Person('Garrett', null, 'Bodybuilder');
-$johanna = new Person('Johanna', null, 'Marketer');
-$jim = new Person('Jim', null, 'Digital Director');
-$lansana = new Person('Lansana', array($garrett, $johanna, $jim), 'Software Engineer');
-$john = new Person('John', array($joe, $chris), 'Client Strategy Director');
+$joe = new Person('Joe', 'SEO Expert');
+$chris = new Person('Chris', 'Front End Developer');
+$garrett = new Person('Garrett', 'Bodybuilder');
+$johanna = new Person('Johanna', 'Marketer');
+$jim = new Person('Jim', 'Digital Director');
+$lansana = new Person('Lansana', 'Software Engineer', array($garrett, $johanna, $jim));
+$john = new Person('John', 'Client Strategy Director', array($joe, $chris));
 
 $queue = new Queue();
-
 $queue->enqueue('Lansana', $lansana);
 $queue->enqueue('John', $john);
 
